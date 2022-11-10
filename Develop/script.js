@@ -53,32 +53,33 @@ function generatePassword() {
 // password += option[optionSelector][randNum]
 //}
 //return password;
+
 var character = function (password, passwordLength, checking, string, range) {
   if (checking === true && password.length < passwordLength) {
-    var randdom = Math.floor(Math.random() * range);
-    password += Array(random);
+    var randomChar = Math.floor(Math.random() * range);
+    password += Array(randomChar);
 
 
 
-  }
-  return password
-  // Takes the output of the fucntion generate password and turns it into texts and connects it to the HTML location #password
-  function writePassword() {
-    var password = generatePassword();
-    var passwordText = document.querySelector("#password");
+  } return password
+}
 
-    passwordText.value = password;
+// Takes the output of the fucntion generate password and turns it into texts and connects it to the HTML location #password
+function writePassword() {
+  var password = generatePassword();
+  var passwordText = document.querySelector("#password");
 
-  }
+  passwordText.value = password;
 
-  //generate a random number that will be our factor for special chars Must be less that our password.lenth 
-  //repeat for each restirction
+}
+//generate a random number that will be our factor for special chars Must be less that our password.lenth 
+//repeat for each restirction
 
-  //create a loop that goes from 0 to passwordLenth
-  //for each loop, check if you are at a factor of one of your random numbers above
-  //if you are, generate a new random number that is between 0 and the length of the targeted array
-  //then go to the targeted array and and grab the ith character (ith the second random number generated)
-  //add that character to our paassword variable above
+//create a loop that goes from 0 to passwordLenth
+//for each loop, check if you are at a factor of one of your random numbers above
+//if you are, generate a new random number that is between 0 and the length of the targeted array
+//then go to the targeted array and and grab the ith character (ith the second random number generated)
+//add that character to our paassword variable above
 
-  // Event starts the write password function
-  generateBtn.addEventListener("click", writePassword);
+// Event starts the write password function
+generateBtn.addEventListener("click", writePassword);
