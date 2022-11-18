@@ -2,7 +2,7 @@
 
 ## Description
 
-This project was the creation of a Java Script file to facilitate a password generator with provided HTML and CSS (link to posted Github pages). The process involved creating a JS file with some provided code to create a function that would allow a user to select desired criteria for a password and then receive a randomized password that contains the selected criteria.!
+This project was the creation of a Java Script file to facilitate a password generator with provided HTML and CSS (https://kaneknah.github.io/ch3_baxley_password_gen/). The process involved creating a JS file with some provided code to create a function that would allow a user to select desired criteria for a password and then receive a randomized password that contains the selected criteria.!
 
 This process involved creating arrays for desired criteria and then selecting alerts, prompts, and confirms through an if statement that would allow the user to select the length of the password as well as if it contained numbers, lowercase letters, uppercase letters, and symbols.
 Once the desired criteria were selected, a For Loop was utilized to randomly select a string from the arrays and create a password. Finally, this password was written back into the page though a provided function.
